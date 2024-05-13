@@ -1,0 +1,21 @@
+.home {
+  height: calc(100vh - 100px);
+  background: linear-gradient(to top, #48204d, #1a0c1c);
+  overflow: hidden;
+  position: relative;
+
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+    img {
+      height: 100%;
+      width: 90%;
+      object-fit: cover;
+      border-radius:  75% 25% 75% 25% / 25% 75% 25% 75%;
+      padding-bottom: 20px;
+  }
+}
