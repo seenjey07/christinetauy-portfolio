@@ -53,8 +53,20 @@ const Home = () => {
           <motion.h2 variants={textVariants}>CHRISTINE TAUY</motion.h2>
           <motion.h1 variants={textVariants}>Web Developer</motion.h1>
           <motion.div className="buttons">
-            <motion.button variants={textVariants}>My Projects</motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button
+              variants={textVariants}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <a href="#Projects">My Projects</a>
+            </motion.button>
+            <motion.button
+              variants={textVariants}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <a href="#Contact">Contact Me</a>
+            </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
