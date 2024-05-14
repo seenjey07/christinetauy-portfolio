@@ -5,6 +5,7 @@
   justify-content: center;
   background-color: whitesmoke;
   color: black;
+
   
   .bg {
     position: fixed;
@@ -13,6 +14,7 @@
     bottom: 0;
     width: 400px;
     background: whitesmoke;
+    z-index: 999;
   
 
     .links {
@@ -43,7 +45,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-
+    z-index: 999;
   }
 
 }
