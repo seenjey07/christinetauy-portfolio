@@ -43,18 +43,34 @@
         font-weight: 600;
         cursor: pointer;
       }
+
+      button:hover {
+        background-color: white;
+        color: black;
+      }
     }
   }
 
-  .scroll {
+  .scrollButton {
     width: 50px;
   }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 40vh;
+    font-weight: 500;
+    color: #ffffff09;
+    bottom: -100px;
+    left: -50px;
+    white-space: nowrap;
+  }
+
 
   .imageContainer {
     height: 100%;
     position: absolute;
     top: 10%;
-    right: -2%;
+    right: 0;
   }
 
   .myPhoto {
