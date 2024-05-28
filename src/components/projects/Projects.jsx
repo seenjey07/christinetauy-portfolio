@@ -36,7 +36,7 @@ const EachProject = ({ item }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
+  const y = useTransform(scrollYProgress, [0, 1], [-500, 500]);
 
   return (
     <section>
