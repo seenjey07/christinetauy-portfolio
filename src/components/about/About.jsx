@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div className="title">
           <h1>
-            <b>For Your</b> Business
+            <b>For Your</b> Business.
           </h1>
           <button>View Projects</button>
         </div>
