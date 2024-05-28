@@ -1,5 +1,5 @@
 import "./projects.scss";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const items = [
@@ -9,6 +9,7 @@ const items = [
     description:
       "While learning about Javascript, Grids, and Flex, I created this site as one of our projects: an interactive Tic-Tac-Toe game that brings the classic 2-player challenge to life. I used CSS for styling.",
     img: "https://i.ibb.co/w7kVLgk/image.png",
+    link: "https://seenj-tictactoe.netlify.app/",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const items = [
     description:
       "This was one of my first projects while learning React. It is a banking application that enables users to create accounts and manage their finances. It utilizes CSS for a polished visual presentation. The app provides users with an intuitive dashboard featuring tabs for financial transactions.",
     img: "https://i.ibb.co/TLrMZtr/image.png",
+    link: "https://seenj-prosperity-bank.netlify.app/",
   },
   {
     id: 3,
@@ -23,14 +25,33 @@ const items = [
     description:
       "A sleek and responsive weather application built with React and styled using Tailwind CSS. It fetches real-time weather data from an API and displays the current temperature, weather conditions, and a 5-day forecast for any searched location. Designed for ease of use, it offers a clean and intuitive user interface for checking the weather quickly and efficiently.",
     img: "https://img.freepik.com/free-vector/collection-cartoon-weather-signs_79603-1806.jpg?t=st=1716902003~exp=1716905603~hmac=3ac5019995f07fa7418d10103e9d8ff2ff77f294cf310dd29633774143ff7801&w=826",
+    link: "https://seenj-weather-app.netlify.app/", //for making and deploying
   },
 ];
 
 const EachProject = ({ item }) => {
+  const ref = useRef();
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["-300", "300"]);
+
   return (
-    <section>
-      {item.title}
-      <img src={item.img} alt={item.title} />
+    <section ref={ref}>
+      <div className="projectContainer">
+        <div className="wrapper">
+          <div className="imageContainer">
+            <img src={item.img} alt={item.title} />
+          </div>
+          <motion.div className="textContainer" style={{ y }}>
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
+            <button onClick={() => window.open(item.link)}>See Project</button>
+          </motion.div>
+        </div>
+      </div>
     </section>
   );
 };
