@@ -1,11 +1,18 @@
 .contact {
-
-  .container {
-    margin-top: 100px;
-  }
+  display: flex;
+  width: 1366px;
   
-  h1 {
-    text-align: center;
-    font-size: 3rem;
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    width: 100%;
+
+    .contactDetails {
+      gap: 10px;
+    }
   }
+
+
 }
