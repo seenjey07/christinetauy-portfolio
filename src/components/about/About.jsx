@@ -28,7 +28,10 @@ const About = () => {
         </div>
       </motion.div>
       <motion.div className="listContainer">
-        <div className="box">
+        <motion.div
+          className="box"
+          whileHover={{ background: "lightgray", color: "black" }}
+        >
           <h2>A little about me</h2>
           <p>
             I&apos;m a career shifter from the sunny streets of Cavite,
@@ -39,8 +42,11 @@ const About = () => {
             exciting world of web development. Let&apos;s team up and whip up
             some digital magic together!
           </p>
-        </div>
-        <div className="box">
+        </motion.div>
+        <motion.div
+          className="box"
+          whileHover={{ background: "lightgray", color: "black" }}
+        >
           <h2>My Education</h2>
           <p>
             I&apos;m graduate of BS Psychology, a Licensed Professional Teacher,
@@ -49,8 +55,11 @@ const About = () => {
             HTML, CSS, JavaScript, React, and Ruby on Rails through Avion School
             from July of last year (2023) to February (2024).
           </p>
-        </div>
-        <div className="box">
+        </motion.div>
+        <motion.div
+          className="box"
+          whileHover={{ background: "lightgray", color: "black" }}
+        >
           <h2>Coding Experience</h2>
           <p>
             During my time at Avion, I delved into coding and app development,
@@ -62,10 +71,13 @@ const About = () => {
             skills and successfully built a messaging app, a stock-trading
             platform, and an airline ticket booking system.
           </p>
-        </div>
+        </motion.div>
       </motion.div>
       <motion.div className="techStacksContainer">
-        <div className="techStacksBox">
+        <motion.div
+          className="techStacksBox"
+          whileHover={{ background: "lightgray", color: "black" }}
+        >
           <h2>Tech Stacks</h2>
           <div>
             <img
@@ -213,7 +225,7 @@ const About = () => {
               alt="stackOverflowBadge"
             />
           </div>
-        </div>
+        </motion.div>
       </motion.div>
     </motion.div>
   );
