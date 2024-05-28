@@ -15,7 +15,7 @@
     hr {
       width: 500px;
       border: none;
-      border-top: 0.75px solid white;
+      border-top: 0.50px solid gray;
     }
 
     p {
@@ -32,7 +32,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-    
+      padding: 10px;
     }
 
       .title {
@@ -56,20 +56,35 @@
           width: 300px;
           height: 100px;
           border-width: 50%;
-          background-color: orange;
+          background-color: rgba(255, 166, 0, 0.861);
           border: none;
           font-size: 24px;
-          font-weight: 500;
+          font-weight: 600;
           border-radius: 50px;
           cursor: pointer;
         }
       }
 
-        .listContainer {
-          flex: 2;
+        .listContainer, .techStacksContainer{
+          flex: 1;
+          display: flex;
+          max-width: 1366px;
+          margin: auto;
+          gap: 10px;
+          align-items: center;
         }
 
-          .box {
-          
+          .box, .techStacksBox {
+          padding: 20px;
+          border: 0.5px solid gray;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: justify;
+          }
+
+          h2 {
+            padding-bottom: 10px;
+            color: rgb(246, 174, 40);
           }
 }
