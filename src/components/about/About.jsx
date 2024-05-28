@@ -14,8 +14,10 @@ const About = () => {
       <motion.div className="titleContainer">
         <div className="title">
           <img src="/female-dev.png" alt="Christine Logo" />
+        </div>
+        <div className="title">
           <h1>
-            The<b> WebDev</b>
+            The <b>WebDev</b>
           </h1>
         </div>
         <div className="title">
