@@ -36,13 +36,13 @@ const EachProject = ({ item }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["-300", "300"]);
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section ref={ref}>
+    <section>
       <div className="projectContainer">
         <div className="wrapper">
-          <div className="imageContainer">
+          <div className="imageContainer" ref={ref}>
             <img src={item.img} alt={item.title} />
           </div>
           <motion.div className="textContainer" style={{ y }}>
