@@ -1,33 +1,55 @@
 import "./about.scss";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
+const variants = {
+  initial: { x: 500, y: 0, opacity: 0 },
+  animate: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+    transition: { duration: 1, staggerChildren: 0.1 },
+  },
+};
 
 const About = () => {
+  const ref = useRef();
+
+  const isInView = useInView(ref, { margin: "-100px" });
+
   return (
-    <motion.div className="about">
-      <motion.div className="textContainer">
+    <motion.div
+      className="about"
+      variants={variants}
+      initial="initial"
+      ref={ref}
+      animate={isInView && "animate"}
+    >
+      <motion.div className="textContainer" variants={variants}>
         <p>
           A relentless learner, a dedicated problem-solver, <br />
           and a passionate creator of digital experiences.
         </p>
         <hr />
       </motion.div>
-      <motion.div className="titleContainer">
+      <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <img src="/female-dev.png" alt="Christine Logo" />
         </div>
         <div className="title">
           <h1>
-            The <b>WebDev</b>
+            The <motion.b whileHover={{ color: "orange" }}>WebDev</motion.b>
           </h1>
         </div>
         <div className="title">
           <h1>
-            <b>For Your</b> Business.
+            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
+            Business.
           </h1>
           <button>View Projects</button>
         </div>
       </motion.div>
-      <motion.div className="listContainer">
+      <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
@@ -73,7 +95,7 @@ const About = () => {
           </p>
         </motion.div>
       </motion.div>
-      <motion.div className="techStacksContainer">
+      <motion.div className="techStacksContainer" variants={variants}>
         <motion.div
           className="techStacksBox"
           whileHover={{ background: "lightgray", color: "black" }}
