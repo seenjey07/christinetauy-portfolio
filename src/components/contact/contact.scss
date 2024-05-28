@@ -8,15 +8,27 @@
 
   
   .textContainer {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 20px;
-    width: 100%;
+    gap: 40px;
+
+    h1 {
+      font-size: 100px;
+      line-height: 88px;
+    }
+
+    span {
+      font-weight: 300;
+    }
 
     .contactDetails {
       gap: 10px;
     }
+  }
+
+  .formContainer {
+    flex: 1;
   }
 
 
