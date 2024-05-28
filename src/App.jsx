@@ -3,6 +3,7 @@ import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import About from "./components/about/About";
+import Projects from "./components/projects/Projects";
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
       <section id="Projects">
         <Parallax type="projects" />
       </section>
-      <section>Projects</section>
+      <Projects />
       <section id="Contact">Contact</section>
     </div>
   );
