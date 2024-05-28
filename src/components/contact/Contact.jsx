@@ -1,25 +1,46 @@
 import "./contact.scss";
+import { motion } from "framer-motion";
+
+const variants = {
+  initial: {
+    opacity: 0,
+    y: 500,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const Contact = () => {
   return (
-    <div className="contact">
-      <div className="textContainer">
-        <h1>Let&apos;s work together!</h1>
-        <div className="contactDetails">
+    <motion.div
+      className="contact"
+      variants={variants}
+      initial="initial"
+      whileInView="animate"
+    >
+      <motion.div className="textContainer" variants={variants}>
+        <motion.h1>Let&apos;s work together!</motion.h1>
+        <motion.div className="contactDetails" variants={variants}>
           <h2>📧 Mail</h2>
           <span>
             <a href="mailto:chrosales07@gmail.com">chrosales07@gmail.com</a>
           </span>
-        </div>
-        <div className="contactDetails">
+        </motion.div>
+        <motion.div className="contactDetails" variants={variants}>
           <h2>🏠 Address</h2>
           <span>Tanza, Cavite, Philippines</span>
-        </div>
-        <div className="contactDetails">
+        </motion.div>
+        <motion.div className="contactDetails" variants={variants}>
           <h2>📞 Phone</h2>
           <span>+63950-303-3001</span>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       <div className="formContainer">
         <form>
@@ -29,7 +50,7 @@ const Contact = () => {
           <button type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
