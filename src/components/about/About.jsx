@@ -63,7 +63,9 @@ const About = () => {
             platform, and an airline ticket booking system.
           </p>
         </div>
-        <div className="box">
+      </motion.div>
+      <motion.div className="techStacksContainer">
+        <div className="techStacksBox">
           <h2>Tech Stacks</h2>
           <div>
             <img
@@ -90,7 +92,6 @@ const About = () => {
               src="	https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
               alt="css3Badge"
             />
-
             <img
               src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
               alt="sassBadge"
