@@ -10,21 +10,22 @@ const About = () => {
           and a passionate creator of digital experiences.
         </p>
         <hr />
-        <motion.div className="titleContainer">
-          <div className="title">
-            <h1>
-              The<b> WebDev</b>
-            </h1>
-            <img src="/female-dev.png" alt="Christine Logo" />
-          </div>
-          <div className="title">
-            <h1>
-              <b>For Your</b> Business
-            </h1>
-            <button>View Projects</button>
-          </div>
-        </motion.div>
-        <motion.div className="listContainer"></motion.div>
+      </motion.div>
+      <motion.div className="titleContainer">
+        <div className="title">
+          <img src="/female-dev.png" alt="Christine Logo" />
+          <h1>
+            The<b> WebDev</b>
+          </h1>
+        </div>
+        <div className="title">
+          <h1>
+            <b>For Your</b> Business
+          </h1>
+          <button>View Projects</button>
+        </div>
+      </motion.div>
+      <motion.div className="listContainer">
         <div className="box">
           <h2>A little about me</h2>
           <p>
