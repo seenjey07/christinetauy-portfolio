@@ -51,8 +51,8 @@ const Contact = () => {
         >
           <svg
             fill="orange"
-            height="425px"
-            width="425px"
+            height="400px"
+            width="400px"
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
