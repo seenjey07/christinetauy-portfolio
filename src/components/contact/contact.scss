@@ -29,27 +29,34 @@
 
   .formContainer {
     flex: 1;
+    position: relative;
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-
-      input, textarea {
-        padding: 20px;
-        background-color: transparent;
-        border: 1px solid white;
-        color: white;
-        border-radius: 8px;
-      }
-
-      button {
-        padding: 20px;
-        border: none;
-        background-color: orange;
-        cursor: pointer;
-        font-weight: 500;
-      }
+    .phoneSVG {
+      position: absolute;
+      margin: auto;
+      stroke: #fff;
     }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input, textarea {
+          padding: 20px;
+          background-color: transparent;
+          border: 1px solid white;
+          color: white;
+          border-radius: 8px;
+        }
+
+        button {
+          padding: 20px;
+          border: none;
+          background-color: orange;
+          cursor: pointer;
+          font-weight: 500;
+        }
+      }
   }
 }
