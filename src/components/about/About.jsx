@@ -59,7 +59,10 @@ const About = () => {
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{
+            backgroundColor: "rgb(255, 165, 0)",
+            color: "rgb(0, 0, 0)",
+          }}
         >
           <h2>A little about me</h2>
           <p>
@@ -74,7 +77,10 @@ const About = () => {
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{
+            backgroundColor: "rgb(255, 165, 0)",
+            color: "rgb(0, 0, 0)",
+          }}
         >
           <h2>My Education</h2>
           <p>
@@ -87,7 +93,10 @@ const About = () => {
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{
+            backgroundColor: "rgb(255, 165, 0)",
+            color: "rgb(0, 0, 0)",
+          }}
         >
           <h2>Coding Experience</h2>
           <p>
@@ -105,7 +114,10 @@ const About = () => {
       <motion.div className="techStacksContainer" variants={variants}>
         <motion.div
           className="techStacksBox"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{
+            backgroundColor: "rgb(255, 165, 0)",
+            color: "rgb(0, 0, 0)",
+          }}
         >
           <h2>Tech Stacks</h2>
           <div>
