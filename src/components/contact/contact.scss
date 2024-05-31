@@ -68,9 +68,21 @@
         button {
           padding: 20px;
           border: none;
-          background-color: orange;
+          background-color: rgb(255, 165, 0);
           cursor: pointer;
           font-weight: 500;
+        }
+
+        .btnResponse {
+          text-align: center;
+          margin: auto;
+          color: rgb(37, 35, 35);
+          font-size: 20px;
+          font-weight: 500;
+          background-color: rgb(255, 165, 0);
+          width: fit-content;
+          border-radius: 8px;
+          padding: 5px 10px;
         }
       }
   }
