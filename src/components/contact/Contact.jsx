@@ -34,9 +34,15 @@ const Contact = () => {
         () => {
           setSuccess(true);
           formRef.current.reset();
+          setInterval(() => {
+            setSuccess(false);
+          }, 3000);
         },
         () => {
           setError(true);
+          setInterval(() => {
+            setError(false);
+          }, 3000);
         }
       );
   };
@@ -61,7 +67,7 @@ const Contact = () => {
           <span>Tanza, Cavite, Philippines</span>
         </motion.div>
         <motion.div className="contactDetails" variants={variants}>
-          <h2>📱Socials</h2>
+          <h2>📱 Socials</h2>
           <span className="social">
             <a
               onClick={() =>
