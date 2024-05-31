@@ -38,7 +38,7 @@ const About = () => {
         </div>
         <div className="title">
           <h1>
-            The{" "}
+            The
             <motion.b whileHover={{ color: "rgb(255, 165, 0)" }}>
               WebDev
             </motion.b>
@@ -51,12 +51,8 @@ const About = () => {
             </motion.b>
             Business.
           </h1>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            href="#Projects"
-          >
-            View Projects
+          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <a href="#Projects">View Projects</a>
           </motion.button>
         </div>
       </motion.div>
