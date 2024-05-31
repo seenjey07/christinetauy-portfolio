@@ -1,5 +1,7 @@
+import { useRef } from "react";
 import "./contact.scss";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 const variants = {
   initial: {
@@ -17,6 +19,25 @@ const variants = {
 };
 
 const Contact = () => {
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_esbgsii", "template_eufzak7", formRef.current, {
+        publicKey: "8-nbk-h2o0yeiUW_t",
+      })
+      .then(
+        () => {
+          console.log("Successful!");
+        },
+        (error) => {
+          console.log("Error:", error.text);
+        }
+      );
+  };
+
   return (
     <motion.div
       className="contact"
@@ -101,11 +122,14 @@ const Contact = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 2, duration: 1 }}
+          ref={formRef}
         >
           <input type="text" name="name" placeholder="Name" required />
           <input type="email" name="email" placeholder="Email" required />
           <textarea name="message" rows={8} placeholder="Message" required />
-          <button type="submit">Send</button>
+          <button type="submit" onClick={sendEmail}>
+            Send
+          </button>
         </motion.form>
       </div>
     </motion.div>
