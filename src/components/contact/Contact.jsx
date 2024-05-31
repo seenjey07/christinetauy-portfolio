@@ -37,8 +37,23 @@ const Contact = () => {
           <span>Tanza, Cavite, Philippines</span>
         </motion.div>
         <motion.div className="contactDetails" variants={variants}>
-          <h2>📞 Phone</h2>
-          <span>+63950-303-3001</span>
+          <h2>📱Socials</h2>
+          <span className="social">
+            <a
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/christinerosalesprofile/"
+                )
+              }
+            >
+              LinkedIn
+              <img src="/linkedin.png" alt="linkedin"></img>
+            </a>
+            <a onClick={() => window.open("https://github.com/seenjey07")}>
+              GitHub
+              <img src="/github.png" alt="github"></img>
+            </a>
+          </span>
         </motion.div>
       </motion.div>
 
