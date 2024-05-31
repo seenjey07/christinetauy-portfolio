@@ -38,15 +38,26 @@ const About = () => {
         </div>
         <div className="title">
           <h1>
-            The <motion.b whileHover={{ color: "orange" }}>WebDev</motion.b>
+            The{" "}
+            <motion.b whileHover={{ color: "rgb(255, 165, 0)" }}>
+              WebDev
+            </motion.b>
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
+            <motion.b whileHover={{ color: "rgb(255, 165, 0)" }}>
+              For Your
+            </motion.b>
             Business.
           </h1>
-          <button>View Projects</button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href="#Projects"
+          >
+            View Projects
+          </motion.button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
