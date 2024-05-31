@@ -33,16 +33,16 @@ const Contact = () => {
       .then(
         () => {
           setSuccess(true);
-          formRef.current.reset();
           setInterval(() => {
+            formRef.current.reset();
             setSuccess(false);
           }, 3000);
         },
         () => {
           setError(true);
-          setInterval(() => {
+          setTimeout(() => {
             setError(false);
-          }, 3000);
+          }, 4000);
         }
       );
   };
@@ -134,14 +134,17 @@ const Contact = () => {
           ref={formRef}
           onSubmit={sendEmail}
         >
+          {error || success === true ? (
+            <div className="btnResponse">
+              {error && "Something went wrong. Please try again."}
+              {success && "Your message has been sent. Thank you!"}
+            </div>
+          ) : null}
+
           <input type="text" name="from_name" placeholder="Name" required />
           <input type="email" name="from_email" placeholder="Email" required />
           <textarea name="message" rows={8} placeholder="Message" required />
           <button>Send</button>
-          <div className="submitButtonResponse">
-            {error && "Something went wrong. Please try again."}
-            {success && "Your message has been sent. Thank you!"}
-          </div>
         </motion.form>
       </div>
     </motion.div>
