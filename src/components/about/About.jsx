@@ -23,7 +23,7 @@ const About = () => {
       variants={variants}
       initial="initial"
       ref={ref}
-      animate={isInView && "animate"}
+      animate={window.innerWidth <= 767 ? "animate" : isInView && "animate"}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
@@ -48,7 +48,7 @@ const About = () => {
           <h1>
             <motion.b whileHover={{ color: "rgb(255, 165, 0)" }}>
               For Your
-            </motion.b>
+            </motion.b>{" "}
             Business.
           </h1>
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
@@ -58,7 +58,7 @@ const About = () => {
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
-          className="box"
+          className="box aboutMe"
           whileHover={{
             backgroundColor: "rgb(255, 165, 0)",
             color: "rgb(0, 0, 0)",
@@ -76,7 +76,7 @@ const About = () => {
           </p>
         </motion.div>
         <motion.div
-          className="box"
+          className="box education"
           whileHover={{
             backgroundColor: "rgb(255, 165, 0)",
             color: "rgb(0, 0, 0)",
@@ -92,7 +92,7 @@ const About = () => {
           </p>
         </motion.div>
         <motion.div
-          className="box"
+          className="box codingExp"
           whileHover={{
             backgroundColor: "rgb(255, 165, 0)",
             color: "rgb(0, 0, 0)",
