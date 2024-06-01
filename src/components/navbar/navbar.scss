@@ -13,20 +13,24 @@
 
     @include mobile {
       justify-content: flex-end;
-      padding: 12px;
+      padding-right: 12px;
       }
 
     span {
       font-size: 1rem;
 
       @include mobile {
-      display: none;
+        font-size: 0.8rem;
       }
     }
 
     .social {
       display: flex;
       gap: 20px;
+
+      @include mobile {
+        display: none;
+      }
 
       img{
         width: 23px;
