@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const variants = {
-  initial: { x: 500, y: 0, opacity: 0 },
+  initial: { x: -500, y: 0, opacity: 0 },
   animate: {
     opacity: 1,
     x: 0,
