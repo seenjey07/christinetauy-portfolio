@@ -7,10 +7,8 @@
   border: 1px solid white;
   position: fixed;
   z-index: 9999;
-}
 
-@include mobile {
-  .cursor {
+  @include mobile {
     display: none;
   }
 }
