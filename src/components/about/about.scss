@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .about {
   background: linear-gradient(to top, #48204d, #1a0c1c);
   height: 100%;
@@ -12,10 +14,22 @@
     align-items: center;
     gap: 20px;
 
+    @include mobile {
+      align-self: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+
     hr {
       width: 500px;
       border: none;
       border-top: 0.50px solid gray;
+
+      @include mobile {
+        width: 100%;
+        border-top: 0.25px solid orange;
+      }
     }
 
     p {
@@ -23,6 +37,12 @@
       font-weight: 250;
       color: white;
       text-align: right;
+
+      @include mobile {
+        font-size: 0.65rem;
+        text-align: center;
+        padding-top: 10px;
+      }
     }
   }
 
@@ -33,6 +53,10 @@
       align-items: center;
       justify-content: center;
       padding: 10px;
+
+      @include mobile {
+        padding: 6px;
+      }
     }
 
       .title {
@@ -40,17 +64,34 @@
         align-items: center;
         gap: 25px;
 
+        @include mobile {
+          flex-direction: column;
+          gap: 0;
+          text-align: center;
+        }
+
         img {
           width: 200px;
           height: 300px;
           border-radius: 50%;
           object-fit: cover;
           box-shadow: 5px 5px rgb(19, 18, 18), -5px -5px rgb(19, 18, 18);
+
+          @include mobile {
+            width: 150px;
+            height: 100px;
+            padding: 4px 0;
+          }
         }
 
         h1 {
           font-size: 96px;
           font-weight: 200;
+
+          @include mobile {
+            font-size: 32px;
+            padding: 0;
+          }
         }
 
         button {
@@ -63,6 +104,16 @@
           font-weight: 600;
           border-radius: 50px;
           cursor: pointer;
+
+          @include mobile {
+            width: 90px;
+            height: 30px;
+            font-size: 0.65rem;
+          }
+
+          // @include mobile {
+          //   display: none;
+          // }
         }
       }
 
@@ -73,6 +124,14 @@
           margin: auto;
           gap: 10px;
           align-items: center;
+
+          @include mobile {
+            flex-direction: column;
+            gap: 5px;
+            padding: 5px 10px;
+            text-align: justify;
+            font-size: 0.75rem;
+          }
         }
 
           .box, .techStacksBox {
@@ -83,9 +142,40 @@
           flex-direction: column;
           justify-content: space-between;
           text-align: justify;
+
+          @include mobile {
+            padding: 4px;
+            font-size: 0.65rem;
+            border: 0.25px solid rgb(231, 168, 52);
+          }
+        }
+
+          .aboutMe, .education {
+            @include mobile {
+              display: none;
+            }
+          }
+
+          .techStacksBox {
+            @include mobile {
+              text-align: center;
+            }
           }
 
           h2 {
             padding-bottom: 10px;
+
+            @include mobile {
+              font-size: 0.8rem;
+              text-align: left;
+            }
+          }
+
+          img {
+            @include mobile {
+              max-width: fit-content;
+              height: 12px;
+              padding-right: 2px;
+            }
           }
 }
