@@ -83,7 +83,6 @@
           @include mobile {
             width: calc(120px + 5vw);
             height: calc(140px + 5vw);
-            padding: 5px;
             object-fit: scale-down;
           }
         }
@@ -93,7 +92,7 @@
           font-weight: 200;
 
           @include mobile {
-            font-size: 2.5rem;
+            font-size: 2.25rem;
             padding: 2px;
           }
         }
@@ -163,7 +162,7 @@
           .codingExp {
             @include mobile {
               flex: 1;
-              font-size: calc(1rem + 0.5vw);
+              font-size: calc(0.9rem + 0.5vw);
               min-height: fit-content;
             }
           }
@@ -181,7 +180,7 @@
             padding-bottom: 10px;
 
             @include mobile {
-              font-size: calc(1.5rem + 0.5vw);
+              font-size: calc(1.25rem + 0.5vw);
               text-align: left;
             }
           }
@@ -189,7 +188,7 @@
           img {
             @include mobile {
               max-width: fit-content;
-              height: calc(1rem + 0.5vw);
+              height: calc(0.8rem + 0.5vw);
               gap: 4px;
             }
           }
