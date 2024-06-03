@@ -12,9 +12,19 @@
     color: orange;
     font-size: 36px;
 
+    @include mobile {
+      padding-top: 15px;
+      padding-bottom: 10px;
+      font-size: calc(1rem + 0.5vw);
+    }
+
     .progressBar {
       height: 10px;
       background-color: white;
+
+      @include mobile {
+        height: 4px;
+      }
     }
   }
 
