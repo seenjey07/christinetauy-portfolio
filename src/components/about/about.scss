@@ -161,7 +161,7 @@
           .codingExp {
             @include mobile {
               flex: 1;
-              font-size: calc(0.8rem + 0.5vw);
+              font-size: calc(1.5rem + 0.5vw);
               min-height: fit-content;
 
             }
