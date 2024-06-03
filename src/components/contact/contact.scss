@@ -12,6 +12,7 @@
     width: 100%;
     flex-direction: column;
     padding: 20px;
+    gap: 20px;
   }
   
   .textContainer {
@@ -23,7 +24,7 @@
     @include mobile {
       width: 100%;
       text-align: center;
-      gap: 15px;
+      gap: 20px;
     }
 
     h1 {
@@ -31,7 +32,7 @@
       line-height: 88px;
 
       @include mobile {
-        padding-top: 20px;
+        padding: 20px 0 10px 0;
         font-size: 40px;
         line-height: 50px;
       }
@@ -42,7 +43,7 @@
     }
 
     .contactDetails {
-      gap: 10px;
+      gap: 15px;
     }
 
     .social {
@@ -94,7 +95,7 @@
       form {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
 
         input, textarea {
           padding: 20px;
