@@ -56,7 +56,7 @@
       padding: 10px;
 
       @include mobile {
-        flex: 1;
+        flex: 2;
         padding: 6px;
         padding-top: 8px;
       }
@@ -162,6 +162,7 @@
           .codingExp {
             @include mobile {
               flex: 1;
+              min-height: fit-content;
             }
           }
 
