@@ -58,7 +58,7 @@
       @include mobile {
         flex: 1;
         padding: 6px;
-        padding-top: 8px;
+        padding-top: 20px;
       }
     }
 
@@ -172,7 +172,7 @@
             @include mobile {
               text-align: center;
               justify-content: flex-start;
-              flex: 0.75;
+              flex: 0.5;
               min-height: fit-content;
             }
           }
@@ -190,8 +190,8 @@
             @include mobile {
               max-width: fit-content;
               height: calc(0.8rem + 0.5vw);
-              gap: 4px;
-              padding-right: 2px;
+              gap: 6px;
+              padding-right: 4px;
             }
           }
 }
