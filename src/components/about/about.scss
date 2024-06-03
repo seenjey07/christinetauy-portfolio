@@ -81,8 +81,8 @@
           box-shadow: 5px 5px rgb(19, 18, 19), -5px -5px rgb(19, 18, 18);
 
           @include mobile {
-            width: calc(140px + 5vw);
-            height: calc(120px + 5vw);
+            width: calc(120px + 5vw);
+            height: calc(140px + 5vw);
             padding: 5px;
           }
         }
