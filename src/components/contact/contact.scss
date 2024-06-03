@@ -8,6 +8,11 @@
   align-items: center;
   gap: 50px;
 
+  @include mobile {
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+  }
   
   .textContainer {
     flex: 1;
@@ -15,9 +20,21 @@
     flex-direction: column;
     gap: 40px;
 
+    @include mobile {
+      width: 100%;
+      text-align: center;
+      gap: 15px;
+    }
+
     h1 {
       font-size: 100px;
       line-height: 88px;
+
+      @include mobile {
+        padding-top: 20px;
+        font-size: 40px;
+        line-height: 50px;
+      }
     }
 
     span {
@@ -33,10 +50,19 @@
       padding-top: 5px;
       gap: 20px;
 
+      @include mobile {
+        justify-content: center;
+      }
+
       img{
         width: 23px;
         height: 18px;
         padding-left: 6px;
+
+        @include mobile {
+          width: 18px;
+          height: 13px;
+        }
       }
     }
   }
@@ -45,6 +71,10 @@
     flex: 1;
     position: relative;
 
+    @include mobile {
+      width: 90%;
+    }
+
     .phoneSvg {
       position: absolute;
       margin: auto;
@@ -52,12 +82,19 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: -1;
+      height: 400px;
+      width: 400px;
+
+      @include mobile {
+        width: 300px;
+        height: 300px;
+      }
     }
 
       form {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
 
         input, textarea {
           padding: 20px;
@@ -65,6 +102,11 @@
           border: 1px solid white;
           color: white;
           border-radius: 8px;
+
+          @include mobile {
+            font-size: 1rem;
+            padding: 12px;
+          }
         }
 
         button {
