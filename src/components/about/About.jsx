@@ -40,6 +40,7 @@ const About = () => {
           <h1>
             The
             <motion.b whileHover={{ color: "rgb(255, 165, 0)" }}>
+              {" "}
               WebDev
             </motion.b>
           </h1>
