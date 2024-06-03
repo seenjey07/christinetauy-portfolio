@@ -56,7 +56,7 @@
       padding: 10px;
 
       @include mobile {
-        flex: 2;
+        flex: 1.5;
         padding: 6px;
         padding-top: 8px;
       }
@@ -69,7 +69,7 @@
 
         @include mobile {
           flex-direction: column;
-          gap: 0;
+          gap: 2px;
           text-align: center;
         }
 
@@ -81,8 +81,8 @@
           box-shadow: 5px 5px rgb(19, 18, 19), -5px -5px rgb(19, 18, 18);
 
           @include mobile {
-            width: 170px;
-            height: 120px;
+            width: calc(120px + 5vw);
+            height: calc(100px + 5vw);
             padding: 5px;
           }
         }
@@ -148,7 +148,6 @@
 
           @include mobile {
             padding: 8px;
-            font-size: calc(0.9rem + 0.5vw);
             border: 0.25px solid rgb(231, 168, 52);
           }
         }
@@ -162,7 +161,9 @@
           .codingExp {
             @include mobile {
               flex: 1;
+              font-size: calc(0.8rem + 0.5vw);
               min-height: fit-content;
+
             }
           }
 
