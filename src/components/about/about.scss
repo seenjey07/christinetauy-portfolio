@@ -92,7 +92,7 @@
           font-weight: 200;
 
           @include mobile {
-            font-size: 32px;
+            font-size: 34px;
             padding: 0;
           }
         }
@@ -109,8 +109,9 @@
           cursor: pointer;
 
           @include mobile {
-            width: 100px;
-            height: 28px;
+            width: fit-content;
+            height: fit-content;
+            padding: 8px 6px;
             font-size: calc(0.70rem + 0.5vw);
           }
 
@@ -163,7 +164,6 @@
               flex: 1;
               font-size: calc(1.5rem + 0.5vw);
               min-height: fit-content;
-
             }
           }
 
