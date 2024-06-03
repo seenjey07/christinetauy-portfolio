@@ -2,10 +2,11 @@
 
 .about {
   background: linear-gradient(to top, #48204d, #1a0c1c);
-  height: 100dvh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  scroll-snap-align: start;
 
   .textContainer {
     flex: 1;
