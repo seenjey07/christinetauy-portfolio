@@ -120,6 +120,12 @@
             margin: auto;
             display: flex;
           }
+
+          @include laptop {
+            margin: auto;
+            display: flex;
+            width: 65%;
+          }
         }
       }
 
