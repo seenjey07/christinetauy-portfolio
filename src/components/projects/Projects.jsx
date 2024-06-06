@@ -23,7 +23,7 @@ const items = [
     id: 3,
     title: "WeatherPulse",
     description:
-      "A sleek and responsive weather application built with React and styled using Tailwind CSS. It fetches real-time weather data from an API and displays the current temperature, weather conditions, and a 5-day forecast for any searched location. Designed for ease of use, it offers a clean and intuitive user interface for checking the weather quickly and efficiently.",
+      "A sleek and responsive weather application built with React and styled using Tailwind CSS. It fetches real-time weather data from an API. It offers a clean and intuitive user interface for checking the weather quickly and efficiently.",
     img: "https://img.freepik.com/free-vector/collection-cartoon-weather-signs_79603-1806.jpg?t=st=1716902003~exp=1716905603~hmac=3ac5019995f07fa7418d10103e9d8ff2ff77f294cf310dd29633774143ff7801&w=826",
     link: "https://seenj-weather-app.netlify.app/", //for making and deploying
   },
