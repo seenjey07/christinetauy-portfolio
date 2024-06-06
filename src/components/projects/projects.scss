@@ -97,6 +97,12 @@
           width: fit-content;
           object-fit: contain;
         }
+
+        @include laptop {
+          height: fit-content;
+          width: fit-content;
+          object-fit: contain;
+        }
       
         img {
           width: 100%;
