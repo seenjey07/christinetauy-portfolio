@@ -40,13 +40,32 @@ section {
 }
 
 @mixin laptop {
-  @media (max-width: 1365px) and (min-width: 1024px) {
+  @media (max-width: 1366px) and (min-width: 1024px) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: 1366px) {
+  @media (min-width: 1367px) {
     @content;
   }
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #411b46;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: antiquewhite;
+  border-radius: 5px; 
+  border: 1px solid #331a36;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e0e0e0;
 }
