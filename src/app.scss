@@ -40,13 +40,13 @@ section {
 }
 
 @mixin laptop {
-  @media (width: 1024px) {
+  @media (max-width: 1365px) and (min-width: 1024px) {
     @content;
   }
 }
 
-// @mixin desktop {
-//   @media (max-width: 1366px) and (min-width: 1025px) {
-//     @content;
-//   }
-// }
+@mixin desktop {
+  @media (min-width: 1366px) {
+    @content;
+  }
+}
