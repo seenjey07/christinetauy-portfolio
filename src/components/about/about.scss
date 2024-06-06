@@ -23,12 +23,24 @@
       padding-right: 5px;
     }
 
+    @include tablet {
+      flex: 0;
+      flex-direction: column;
+      gap: 5px;
+      padding-right: 5px;
+    }
+
     hr {
       width: 500px;
       border: none;
       border-top: 0.50px solid gray;
 
       @include mobile {
+        width: 100%;
+        border-top: 0.25px solid orange;
+      }
+
+      @include tablet {
         width: 100%;
         border-top: 0.25px solid orange;
       }
@@ -42,8 +54,13 @@
 
       @include mobile {
         font-size: 0.8rem;
-        text-align: center;
         padding-top: 10px;
+      }
+
+      @include tablet {
+        font-size: 0.8rem;
+        padding-top: 10px;
+        padding-right: 10px;
       }
     }
   }
@@ -57,6 +74,11 @@
       padding: 10px;
 
       @include mobile {
+        flex: 1;
+        padding: 12px 0;
+      }
+
+      @include tablet {
         flex: 1;
         padding: 12px 0;
       }
@@ -74,17 +96,32 @@
           padding-top: 10px;
         }
 
+        @include tablet {
+          flex-direction: column;
+          gap: 3px;
+          text-align: center;
+          padding-top: 10px;
+        }
+
         img {
           width: 200px;
           height: 300px;
           border-radius: 50%;
           object-fit: cover;
-          box-shadow: 5px 5px rgb(19, 18, 19), -5px -5px rgb(19, 18, 18);
+          box-shadow: 5px 5px rgb(19, 18, 18), -5px -5px rgb(19, 18, 18);
 
           @include mobile {
             width: calc(120px + 5vw);
             height: calc(140px + 5vw);
             object-fit: scale-down;
+            box-shadow: none;
+          }
+
+          @include tablet {
+            width: calc(120px + 5vw);
+            height: calc(140px + 5vw);
+            object-fit: scale-down;
+            box-shadow: 0 3px rgb(19, 18, 18), 0 -3px rgb(19, 18, 18);
           }
         }
 
@@ -95,6 +132,11 @@
           @include mobile {
             font-size: 2.25rem;
             padding: 4px;
+          }
+
+          @include tablet {
+            font-size: 2.5rem;
+            padding: 0;
           }
         }
 
@@ -120,6 +162,13 @@
           // @include mobile {
           //   display: none;
           // }
+
+          @include tablet {
+            width: fit-content;
+            height: fit-content;
+            padding: 6px;
+            font-size: calc(0.75rem + 0.5vw);
+          }
         }
       }
 
@@ -138,6 +187,15 @@
             text-align: justify;
             justify-content: center;
           }
+
+          @include tablet {
+            // flex-direction: row;
+            flex-direction: column;
+            padding: 5px 8px;
+            text-align: justify;
+            align-items: flex-start;
+            justify-content: center;
+          }
         }
 
           .box, .techStacksBox {
@@ -152,6 +210,13 @@
           @include mobile {
             padding: 8px;
             border: 0.5px solid rgb(231, 168, 52);
+          }
+
+          @include tablet {
+            border: 0.5px solid rgb(231, 168, 52);
+            font-size: calc(0.75rem + 0.5vw);
+            padding: 15px;
+            height: fit-content;
           }
         }
 
@@ -176,6 +241,14 @@
               flex: 0.5;
               min-height: fit-content;
             }
+
+            @include tablet {
+              text-align: center;
+              justify-content: flex-start;
+              flex: 0.5;
+              min-height: fit-content;
+              border: 0.5px solid rgb(231, 168, 52);
+            }
           }
 
           h2 {
@@ -185,10 +258,22 @@
               font-size: calc(1.25rem + 0.5vw);
               text-align: left;
             }
+
+            @include tablet {
+              font-size: calc(1rem + 0.5vw);
+              text-align: left;
+            }
           }
 
           img {
             @include mobile {
+              max-width: fit-content;
+              height: calc(0.8rem + 0.5vw);
+              gap: 6px;
+              padding-right: 4px;
+            }
+
+            @include tablet {
               max-width: fit-content;
               height: calc(0.8rem + 0.5vw);
               gap: 6px;
