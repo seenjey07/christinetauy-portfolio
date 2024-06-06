@@ -6,7 +6,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: auto;
+
+  @include mobile {
+    overflow-y: auto;
+  }
+
+  @include tablet {
+    overflow-y: auto;
+  }
+
+  @include laptop {
+    overflow-y: auto;
+  }  
 
   .textContainer {
     flex: 1;
