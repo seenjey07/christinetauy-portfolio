@@ -30,6 +30,13 @@
       padding-right: 5px;
     }
 
+    @include laptop {
+      flex: 0;
+      flex-direction: column;
+      gap: 5px;
+      padding-right: 5px;
+    }
+
     hr {
       width: 500px;
       border: none;
@@ -41,6 +48,11 @@
       }
 
       @include tablet {
+        width: 100%;
+        border-top: 0.25px solid orange;
+      }
+
+      @include laptop {
         width: 100%;
         border-top: 0.25px solid orange;
       }
@@ -59,6 +71,12 @@
 
       @include tablet {
         font-size: 0.8rem;
+        padding-top: 10px;
+        padding-right: 10px;
+      }
+
+      @include laptop {
+        font-size: 0.9rem;
         padding-top: 10px;
         padding-right: 10px;
       }
@@ -82,6 +100,11 @@
         flex: 1;
         padding: 12px 0;
       }
+
+      @include laptop {
+        flex: 1;
+        padding: 12px 0;
+      }
     }
 
       .title {
@@ -97,6 +120,13 @@
         }
 
         @include tablet {
+          flex-direction: column;
+          gap: 3px;
+          text-align: center;
+          padding-top: 10px;
+        }
+
+        @include laptop {
           flex-direction: column;
           gap: 3px;
           text-align: center;
@@ -123,6 +153,13 @@
             object-fit: scale-down;
             box-shadow: 0 3px rgb(19, 18, 18), 0 -3px rgb(19, 18, 18);
           }
+
+          @include laptop {
+            width: calc(120px + 5vw);
+            height: calc(140px + 5vw);
+            object-fit: contain;
+            box-shadow: none;
+          }
         }
 
         h1 {
@@ -136,6 +173,11 @@
 
           @include tablet {
             font-size: 2.5rem;
+            padding: 0;
+          }
+
+          @include laptop {
+            font-size: 3.5rem;
             padding: 0;
           }
         }
@@ -169,6 +211,13 @@
             padding: 6px;
             font-size: calc(0.75rem + 0.5vw);
           }
+
+          @include laptop {
+            width: fit-content;
+            height: fit-content;
+            padding: 15px;
+            font-size: calc(0.75rem + 0.5vw);
+          }
         }
       }
 
@@ -196,6 +245,14 @@
             align-items: flex-start;
             justify-content: center;
           }
+
+          @include laptop {
+            flex-direction: row;
+            padding: 5px 8px;
+            text-align: justify;
+            align-items: flex-start;
+            justify-content: center;
+          }
         }
 
           .box, .techStacksBox {
@@ -213,6 +270,13 @@
           }
 
           @include tablet {
+            border: 0.5px solid rgb(231, 168, 52);
+            font-size: calc(0.75rem + 0.5vw);
+            padding: 15px;
+            height: fit-content;
+          }
+
+          @include laptop {
             border: 0.5px solid rgb(231, 168, 52);
             font-size: calc(0.75rem + 0.5vw);
             padding: 15px;
@@ -249,6 +313,13 @@
               min-height: fit-content;
               border: 0.5px solid rgb(231, 168, 52);
             }
+
+            @include laptop {
+              text-align: center;
+              justify-content: flex-start;
+              min-height: fit-content;
+              border: 0.5px solid rgb(231, 168, 52);
+            }
           }
 
           h2 {
@@ -263,6 +334,11 @@
               font-size: calc(1rem + 0.5vw);
               text-align: left;
             }
+
+            @include laptop {
+              font-size: calc(1rem + 0.5vw);
+              text-align: left;
+            }
           }
 
           img {
@@ -274,6 +350,13 @@
             }
 
             @include tablet {
+              max-width: fit-content;
+              height: calc(0.8rem + 0.5vw);
+              gap: 6px;
+              padding-right: 4px;
+            }
+
+            @include laptop {
               max-width: fit-content;
               height: calc(0.8rem + 0.5vw);
               gap: 6px;
