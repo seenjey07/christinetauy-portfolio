@@ -85,11 +85,12 @@ const About = () => {
         >
           <h2>My Education</h2>
           <p>
-            I&apos;m graduate of BS Psychology, a Licensed Professional Teacher,
-            and with 27 units earned in my Master of Arts in Teaching Social
-            Sciences. More recently, I have gained training and experience in
-            HTML, CSS, JavaScript, React, and Ruby on Rails through Avion School
-            from July of last year (2023) to February (2024).
+            I&apos;m a graduate of BS Psychology, a Licensed Professional
+            Teacher, and with 27 units earned in my Master of Arts in Teaching
+            Social Sciences. More recently, I have gained training and
+            experience in HTML, CSS, JavaScript, React, and Ruby on Rails
+            through Avion School from July of last year (2023) to February
+            (2024).
           </p>
         </motion.div>
         <motion.div
