@@ -57,6 +57,7 @@ const Home = () => {
               variants={textVariants}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              onClick={() => "#Projects"}
             >
               <a href="#Projects">My Projects</a>
             </motion.button>
@@ -64,6 +65,7 @@ const Home = () => {
               variants={textVariants}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              onClick={() => "#Contact"}
             >
               <a href="#Contact">Contact Me</a>
             </motion.button>
