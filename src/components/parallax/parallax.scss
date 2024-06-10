@@ -16,17 +16,17 @@
     z-index: 3;
 
     @include mobile {
-      font-size: 1.5rem;
+      font-size: 2rem;
       text-align: center;
     }
 
     @include tablet {
-      font-size: 2.1rem;
+      font-size: 2.2rem;
       text-align: center;
     }
 
     @include laptop {
-      font-size: 2.3rem;
+      font-size: 2.4rem;
       text-align: center;
     }
   }
