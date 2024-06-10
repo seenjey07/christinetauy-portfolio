@@ -96,6 +96,7 @@
           height: fit-content;
           width: fit-content;
           object-fit: contain;
+          padding-left: 15px;
         }
 
         @include laptop {
@@ -186,10 +187,12 @@
 
           @include tablet {
             font-size: 1rem;
+            padding-right: 15px;
           }
 
           @include laptop {
             font-size: 1rem;
+            padding-right: 15px;
           }
         }
 
