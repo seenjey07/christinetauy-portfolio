@@ -163,8 +163,8 @@
           }
 
           @include laptop {
-            width: calc(90px + 5vw);
-            height: calc(110px + 5vw);
+            width: 90px;
+            height: 110px;
             object-fit: contain;
             box-shadow: none;
           }
@@ -301,7 +301,7 @@
 
           .codingExp {
             @include mobile {
-              flex: 1;
+              flex: 0.5;
               font-size: 0.85rem;
               min-height: fit-content;
             }
