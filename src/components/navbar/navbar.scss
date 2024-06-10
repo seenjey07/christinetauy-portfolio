@@ -48,6 +48,17 @@
 
       @include mobile {
         gap: 15px;
+        font-size: 0.8rem;
+      }
+
+      @include tablet {
+        gap: 15px;
+        font-size: 0.8rem;
+      }
+
+      @include laptop {
+        gap: 15px;
+        font-size: 0.8rem;
       }
 
       img{
@@ -56,12 +67,17 @@
         padding-left: 6px;
 
         @include mobile {
-          width: 22px;
-          height: 14px;
+          width: 20px;
+          height: 12px;
         }
 
         @include tablet {
           width: 22px;
+          height: 14px;
+        }
+
+        @include laptop {
+          width: 23px;
           height: 14px;
         }
       }
