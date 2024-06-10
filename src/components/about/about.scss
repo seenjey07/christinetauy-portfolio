@@ -65,7 +65,7 @@
 
       @include laptop {
         width: 100%;
-        border-top: 0.25px solid orange;
+        border-top: 0.25px solid gray;
       }
     }
 
@@ -82,14 +82,12 @@
 
       @include tablet {
         font-size: 0.8rem;
-        padding-top: 10px;
-        padding-right: 10px;
+        padding-top: 8px;
       }
 
       @include laptop {
         font-size: 0.9rem;
         padding-top: 10px;
-        padding-right: 10px;
       }
     }
   }
@@ -103,18 +101,18 @@
       padding: 10px;
 
       @include mobile {
-        flex: 1;
-        padding: 12px 0;
+        flex: 0.5;
+        padding-bottom: 10px;
       }
 
       @include tablet {
         flex: 1;
-        padding: 12px 0;
+        padding: 10px 0;
       }
 
       @include laptop {
         flex: 1;
-        padding: 12px 0;
+        padding: 10px 0;
       }
     }
 
@@ -125,9 +123,8 @@
 
         @include mobile {
           flex-direction: column;
-          gap: 4px;
           text-align: center;
-          padding-top: 10px;
+          gap: 3px;
         }
 
         @include tablet {
@@ -152,50 +149,50 @@
           box-shadow: 5px 5px rgb(19, 18, 18), -5px -5px rgb(19, 18, 18);
 
           @include mobile {
-            width: calc(120px + 5vw);
-            height: calc(140px + 5vw);
+            width: 90px;
+            height: 110px;
             object-fit: scale-down;
             box-shadow: none;
           }
 
           @include tablet {
-            width: calc(120px + 5vw);
-            height: calc(140px + 5vw);
+            width: 90px;
+            height: 110px;
             object-fit: scale-down;
             box-shadow: 0 3px rgb(19, 18, 18), 0 -3px rgb(19, 18, 18);
           }
 
           @include laptop {
-            width: calc(120px + 5vw);
-            height: calc(140px + 5vw);
+            width: calc(110px + 5vw);
+            height: calc(130px + 5vw);
             object-fit: contain;
             box-shadow: none;
           }
         }
 
         h1 {
-          font-size: 96px;
+          font-size: 76px;
           font-weight: 200;
 
           @include mobile {
-            font-size: 2.25rem;
+            font-size: 1.75rem;
             padding: 4px;
           }
 
           @include tablet {
-            font-size: 2.5rem;
+            font-size: 1.75rem;
             padding: 0;
           }
 
           @include laptop {
-            font-size: 3.5rem;
+            font-size: 2rem;
             padding: 0;
           }
         }
 
         button {
-          width: 300px;
-          height: 100px;
+          width: 250px;
+          height: 65px;
           border-width: 50%;
           background-color: orange;
           border: none;
@@ -209,25 +206,21 @@
             width: fit-content;
             height: fit-content;
             padding: 6px;
-            font-size: calc(0.70rem + 0.5vw);
+            font-size: 0.75rem;
           }
-
-          // @include mobile {
-          //   display: none;
-          // }
 
           @include tablet {
             width: fit-content;
             height: fit-content;
-            padding: 6px;
-            font-size: calc(0.75rem + 0.5vw);
+            padding: 10px;
+            font-size: 0.75rem;
           }
 
           @include laptop {
             width: fit-content;
             height: fit-content;
-            padding: 15px;
-            font-size: calc(0.75rem + 0.5vw);
+            padding: 10px;
+            font-size: 0.85rem;
           }
         }
       }
@@ -243,24 +236,24 @@
           @include mobile {
             flex-direction: column;
             gap: 2px;
-            padding: 5px 8px;
+            padding: 5px 10px;
             text-align: justify;
             justify-content: center;
           }
 
           @include tablet {
-            // flex-direction: row;
-            flex-direction: column;
-            padding: 5px 8px;
-            text-align: justify;
+            flex-direction: row;
+            // flex-direction: column;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 10px;
             align-items: flex-start;
             justify-content: center;
           }
 
           @include laptop {
             flex-direction: row;
-            padding: 5px 8px;
-            text-align: justify;
+            padding: 5px 10px;
             align-items: flex-start;
             justify-content: center;
           }
@@ -282,16 +275,12 @@
 
           @include tablet {
             border: 0.5px solid rgb(231, 168, 52);
-            font-size: calc(0.75rem + 0.5vw);
             padding: 15px;
-            height: fit-content;
           }
 
           @include laptop {
-            border: 0.5px solid rgb(231, 168, 52);
-            font-size: calc(0.75rem + 0.5vw);
+            border: 0.5px solid gray;
             padding: 15px;
-            height: fit-content;
           }
         }
 
@@ -299,13 +288,30 @@
             @include mobile {
               display: none;
             }
+
+            @include tablet {
+              font-size: 0.85rem;
+            }
+
+            @include laptop {
+              font-size: 0.85rem;
+              min-height: fit-content;
+            }
           }
 
           .codingExp {
             @include mobile {
               flex: 1;
-              font-size: calc(0.9rem + 0.5vw);
+              font-size: 0.85rem;
               min-height: fit-content;
+            }
+
+            @include tablet {
+              font-size: 0.85rem;
+            }
+
+            @include laptop {
+              font-size: 0.85rem;
             }
           }
 
@@ -329,7 +335,7 @@
               text-align: center;
               justify-content: flex-start;
               min-height: fit-content;
-              border: 0.5px solid rgb(231, 168, 52);
+              border: 0.5px solid gray;
             }
           }
 
@@ -337,17 +343,17 @@
             padding-bottom: 10px;
 
             @include mobile {
-              font-size: calc(1.25rem + 0.5vw);
+              font-size: 1rem;
               text-align: left;
             }
 
             @include tablet {
-              font-size: calc(1rem + 0.5vw);
+              font-size: 1rem;
               text-align: left;
             }
 
             @include laptop {
-              font-size: calc(1rem + 0.5vw);
+              font-size: 1.25rem;
               text-align: left;
             }
           }
