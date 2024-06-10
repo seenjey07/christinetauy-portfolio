@@ -74,12 +74,12 @@
 
       @include tablet {
         padding: 0 20px;
-        gap: 25px;
+        gap: 20px;
       }
 
       @include laptop {
-        padding: 0 20px;
-        gap: 25px;
+        padding: 0 25px;
+        gap: 10px;
       }
 
       .imageContainer {
@@ -109,22 +109,24 @@
           height: 100%;
           object-fit: cover;
           border-radius: 10px;
-          box-shadow: 0 0 20px rgb(190, 186, 186);
+          box-shadow: 3px 3px 8px rgb(79, 79, 79);
 
           @include mobile {
             margin: auto;
             display: flex;
+            width: 90%;
           }
 
           @include tablet {
             margin: auto;
             display: flex;
+            width: 95%;
           }
 
           @include laptop {
             margin: auto;
             display: flex;
-            width: 65%;
+            width: 85%;
           }
         }
       }
@@ -148,22 +150,28 @@
           align-items: center;
           text-align: justify;
         }
+
+        @include laptop {
+          text-align: justify;
+          gap: 10px;
+          padding: 0 20px;
+        }
           
         h2 {
           font-size: 72px;
 
           @include mobile {
-            font-size: 34px;
+            font-size: 32px;
             text-align: center;
           }
 
           @include tablet {
-            font-size: 34px;
+            font-size: 32px;
             text-align: center;
           }
 
           @include laptop {
-            font-size: 50px;
+            font-size: 40px;
           }
         }
 
@@ -177,6 +185,10 @@
           }
 
           @include tablet {
+            font-size: 1rem;
+          }
+
+          @include laptop {
             font-size: 1rem;
           }
         }
