@@ -29,17 +29,18 @@
       height: 85%;
       align-items: center;
       text-align: center;
+      gap: 20px;
     }
 
     @include tablet {
-      width: 50%;
-      gap: 5px;
+      width: 60%;
+      gap: 15px;
       text-align: center;
       align-items: center;
     }
 
     @include laptop {
-      width: 50%;
+      width: 60%;
       gap: 5px;
       text-align: center;
       align-items: center;
@@ -51,7 +52,7 @@
       letter-spacing: 8px;
 
       @include mobile {
-        font-size: calc(1.8rem + 0.5vw);
+        font-size: calc(1.5rem + 0.5vw);
         text-align: center;
       }
 
@@ -72,7 +73,7 @@
       font-weight: 650;
 
       @include mobile {
-        font-size: calc(2rem + 0.5vw);
+        font-size: calc(1.75rem + 0.5vw);
       }
 
       @include tablet {
@@ -97,12 +98,16 @@
         font-weight: 600;
         cursor: pointer;
 
+        @include mobile {
+          padding: 8px;
+        }
+
         @include tablet {
-          padding: 10px;
+          padding: 8px;
         }
 
         @include laptop {
-          padding: 15px;
+          padding: 10px;
         }
       }
 
@@ -132,7 +137,7 @@
     width: 50%;
 
     @include mobile {
-      bottom: calc(-35px - 5vh);
+      bottom: calc(-25px - 5vh);
       left: 0;
       width: 100%
     }
@@ -144,7 +149,7 @@
     }
 
     @include laptop {
-      bottom: -70px;
+      bottom: -53px;
       left: 0;
       width: 100%
     }
@@ -179,9 +184,9 @@
 
     @include laptop {
       height: 100%;
-      width: 70%;
+      width: 50%;
       top: 10%;
-      left: 50%;
+      left: 60%;
     }
   
 
