@@ -40,16 +40,16 @@ section {
 }
 
 @mixin laptop {
-  @media (max-width: 1366px) and (min-width: 1024px) {
+  @media (max-width: 1440px) and (min-width: 1024px) {
     @content;
   }
 }
 
-@mixin desktop {
-  @media (min-width: 1367px) {
-    @content;
-  }
-}
+// @mixin desktop {
+//   @media (min-width: 1441px) {
+//     @content;
+//   }
+// }
 
 
 ::-webkit-scrollbar {
