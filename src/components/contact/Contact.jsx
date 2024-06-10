@@ -67,7 +67,7 @@ const Contact = () => {
           <span>Tanza, Cavite, Philippines</span>
         </motion.div>
         <motion.div className="contactDetails" variants={variants}>
-          <h2>📱 Socials</h2>
+          <h2>📱Socials</h2>
           <span className="social">
             <a
               onClick={() =>
