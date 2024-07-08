@@ -27,6 +27,15 @@ const items = [
     img: "https://i.ibb.co/wwVMdF1/Weather-Pulse.png",
     link: "https://seenj-weatherpulse.netlify.app",
   },
+
+  {
+    id: 4,
+    title: "ShopBud",
+    description:
+      "With ShopBud, users can easily manage their shopping lists, including adding new items, editing existing entries, and deleting items they no longer need. Stay organized and make your shopping experience smoother with ShopBud.",
+    img: "https://i.ibb.co/6y3R3m7/ShopBud.png",
+    link: "https://seenj-shopbud.netlify.app/",
+  },
 ];
 
 const EachProject = ({ item }) => {
