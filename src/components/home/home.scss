@@ -97,6 +97,7 @@
         color: white;
         font-weight: 600;
         cursor: pointer;
+        z-index: 2;
 
         @include mobile {
           padding: 8px;
