@@ -59,7 +59,7 @@ const items = [
     id: 7,
     title: "MindfulMe",
     description:
-      "MindfulMe is a wellness app designed to help users cultivate mindfulness and track their mental well-being. It allows users to record daily moods and journal entries, fostering self-awareness and emotional reflection. Built with React, Vite, JSX, Tailwind CSS, and Ruby on Rails, the app aims to deliver a modern, intuitive user experience. Currently under development, MindfulMe seeks to support users in nurturing their mental health and embracing mindfulness daily.",
+      "Currently under development, MindfulMe is a wellness app that seeks to support users in nurturing their mental health and embracing mindfulness daily. It allows users to record daily moods and journal entries, fostering self-awareness and emotional reflection. Built with React, Vite, JSX, Tailwind CSS, and Ruby on Rails, the app aims to deliver a modern, intuitive user experience.",
     img: "https://i.ibb.co/kg5FkMh/Mindful-Me.png",
     link: "",
   },
