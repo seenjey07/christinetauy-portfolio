@@ -49,7 +49,7 @@ const items = [
     description:
       "Using Figma, I created a design for a website for a professional review company. This website is currently under construction.",
     img: "https://i.ibb.co/8dpbfBc/PRBSite.png",
-    link: "https://bit.ly/PRBSite",
+    link: "https://bit.ly/PRB-Page",
   },
   {
     id: 7,
@@ -57,7 +57,7 @@ const items = [
     description:
       "Using Figma, I created a design for Professional Review Buddy's related website - PRB LET, specifically for Filipino LET takers. This website is currently under construction.",
     img: "https://i.ibb.co/z8Rjsh3/PRB-LETSite.png",
-    link: "https://bit.ly/PRBLETPage",
+    link: "https://bit.ly/PRBLET-Page",
   },
   {
     id: 8,
