@@ -37,11 +37,11 @@ const items = [
   },
   {
     id: 5,
-    title: "ShopBud",
+    title: "ChoreChatter",
     description:
-      "With ShopBud, users can easily manage their shopping lists, including adding new items, editing existing entries, and deleting items they no longer need. Stay organized and make your shopping experience smoother with ShopBud.",
-    img: "https://i.ibb.co/6y3R3m7/ShopBud.png",
-    link: "https://seenj-shopbud.netlify.app/",
+      "ChoreChatter is a simple and interactive chat and to-do application designed to help users manage their daily tasks in a fun and engaging way by combining a mock chatbot feature with a to-do list.",
+    img: "https://i.ibb.co/qn2Zz00/Chore-Chatter.png",
+    link: "https://seenj-chorechatter.netlify.app/",
   },
   {
     id: 6,
@@ -66,6 +66,14 @@ const items = [
       "Currently under development, MindfulMe is a wellness app that seeks to support users in nurturing their mental health and embracing mindfulness daily. It allows users to record daily moods and journal entries, fostering self-awareness and emotional reflection. Built with React, Vite, JSX, Tailwind CSS, and Ruby on Rails, the app aims to deliver a modern, intuitive user experience.",
     img: "https://i.ibb.co/LkgtHHx/Mindful-Me.png",
     link: "",
+  },
+  {
+    id: 9,
+    title: "ShopBud",
+    description:
+      "With ShopBud, users can easily manage their shopping lists, including adding new items, editing existing entries, and deleting items they no longer need. Stay organized and make your shopping experience smoother with ShopBud.",
+    img: "https://i.ibb.co/6y3R3m7/ShopBud.png",
+    link: "https://seenj-shopbud.netlify.app/",
   },
 ];
 
