@@ -40,7 +40,7 @@ const items = [
     title: "ChoreChatter",
     description:
       "ChoreChatter is a simple and interactive chat and to-do application designed to help users manage their daily tasks in a fun and engaging way by combining a mock chatbot feature with a to-do list.",
-    img: "https://i.ibb.co/qn2Zz00/Chore-Chatter.png",
+    img: "https://i.ibb.co/TgbVHJ0/Chore-Chatter.png",
     link: "https://seenj-chorechatter.netlify.app/",
   },
   {
