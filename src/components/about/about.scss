@@ -5,7 +5,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @include mobile {
     overflow-y: auto;
@@ -225,37 +225,42 @@
         }
       }
 
-        .listContainer, .techStacksContainer{
+        .listContainer, .techStacksContainer {
           flex: 1;
           display: flex;
           max-width: 1366px;
           margin: auto;
+          padding: 10px;
           gap: 10px;
-          align-items: center;
+          align-items: flex-start;
+          justify-content: space-around;
 
           @include mobile {
             flex: 0;
             flex-direction: column;
-            padding: 5px 10px;
             text-align: justify;
             justify-content: center;
           }
 
           @include tablet {
             flex-direction: row;
-            // flex-direction: column;
-            padding-left: 5px;
-            padding-right: 5px;
-            padding-bottom: 10px;
-            align-items: flex-start;
-            justify-content: center;
+            align-items: stretch;
+            justify-content: space-around;
           }
 
           @include laptop {
             flex-direction: row;
-            padding: 5px 10px;
-            align-items: flex-start;
-            justify-content: center;
+
+            .aboutMe, .education, .workExp {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              flex: 1;
+              min-height: 240px;
+              max-height: fit-content;
+              align-items: flex-start;
+              text-align: justify;
+            }
           }
         }
 
@@ -265,8 +270,9 @@
           border-radius: 10px;
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
           text-align: justify;
+          width: 100%;
+          height: fit-content;
 
           @include mobile {
             padding: 8px;
@@ -275,12 +281,12 @@
 
           @include tablet {
             border: 0.5px solid gray;
-            padding: 15px;
+            padding: 12px;
           }
 
           @include laptop {
             border: 0.5px solid gray;
-            padding: 15px;
+            padding: 12px;
           }
         }
 
@@ -299,7 +305,7 @@
             }
           }
 
-          .codingExp, .aboutMe {
+          .codingExp, .workExp, .aboutMe {
             @include mobile {
               flex: 1;
               font-size: 0.9rem;
@@ -308,6 +314,7 @@
 
             @include tablet {
               font-size: 0.85rem;
+              
             }
 
             @include laptop {
