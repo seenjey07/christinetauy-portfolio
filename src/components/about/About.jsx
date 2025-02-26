@@ -93,7 +93,30 @@ const About = () => {
             (2024).
           </p>
         </motion.div>
+
         <motion.div
+          className="box workExp"
+          whileHover={{
+            backgroundColor: "rgb(255, 165, 0)",
+            color: "rgb(0, 0, 0)",
+          }}
+        >
+          <h2>Work Experience</h2>
+          <p>
+            With a diverse background in customer service, recruitment,
+            marketing, education, and web development, I bring a unique
+            combination of technical and administrative skills to every role I
+            take on.
+          </p>
+          <p>
+            Additionally, I have hands-on experience in front-end development
+            using ReactJS, TypeScript, JavaScript, Tailwind CSS, SASS, ShadCN,
+            daisyUI, and Bootstrap, as well as backend experience with Ruby on
+            Rails and SQL/PostgreSQL.
+          </p>
+        </motion.div>
+
+        {/* <motion.div
           className="box codingExp"
           whileHover={{
             backgroundColor: "rgb(255, 165, 0)",
@@ -111,7 +134,7 @@ const About = () => {
             skills and successfully built a messaging app, a stock-trading
             platform, and an airline ticket booking system.
           </p>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
       <motion.div className="techStacksContainer" variants={variants}>
         <motion.div
