@@ -48,8 +48,8 @@ const items = [
     title: "Professional Review Buddy Website",
     description:
       "Using Figma, I created a design for a website for a professional review company. This website is currently under construction.",
-    img: "https://i.ibb.co/8dpbfBc/PRBSite.png",
-    link: "https://bit.ly/PRB-Page",
+    img: "https://i.ibb.co/GvZgKsgM/PRBHome.png",
+    link: "https://bit.ly/PRBHomeFigmaProto",
   },
   {
     id: 7,
