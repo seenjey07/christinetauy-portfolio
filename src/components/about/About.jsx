@@ -87,10 +87,9 @@ const About = () => {
           <p>
             I&apos;m a graduate of BS Psychology, a Licensed Professional
             Teacher, and with 27 units earned in my Master of Arts in Teaching
-            Social Sciences. More recently, I have gained training and
-            experience in HTML, CSS, JavaScript, React, and Ruby on Rails
-            through Avion School from July of last year (2023) to February
-            (2024).
+            Social Sciences. I have gained training and experience in HTML, CSS,
+            JavaScript, ReactJS, and Ruby on Rails through Avion School from
+            July (2023) to February (2024).
           </p>
         </motion.div>
 
