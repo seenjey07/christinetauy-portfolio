@@ -113,7 +113,7 @@ const Projects = () => {
         <h1>Projects</h1>
         <motion.div className="progressBar" style={{ scaleX }}></motion.div>
       </div>
-      {items.map((item) => (
+      {[...items].reverse().map((item) => (
         <EachProject key={item.id} item={item} />
       ))}
     </div>
