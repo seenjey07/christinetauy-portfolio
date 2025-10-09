@@ -59,6 +59,14 @@ const items = [
     img: "https://i.ibb.co/LkgtHHx/Mindful-Me.png",
     link: "",
   },
+  {
+    id: 8,
+    title: "Mind & Metrics Consultancy",
+    description:
+      "A modern single-page business website built with React, TypeScript, Tailwind CSS, and Shadcn/ui. It features a clean, responsive design with four key sections: Home, About, Services, and Contact — providing seamless navigation and quick access to the business&apos;s Facebook and Messenger channels. Deployed on Vercel for fast and reliable performance.",
+    img: "https://i.ibb.co/zVSB1SRW/Mind-Metrics.png",
+    link: "https://mind-metrics-alpha.vercel.app/",
+  },
 ];
 
 const EachProject = ({ item }) => {
