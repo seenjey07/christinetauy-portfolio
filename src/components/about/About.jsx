@@ -68,12 +68,16 @@ const About = () => {
           <h2>A little about me</h2>
           <p>
             I&apos;m a career shifter from the sunny streets of Cavite,
-            Philippines. When I&apos;m not diving into code, you&apos;ll catch
-            me binge-watching movies, swooning over Korean dramas, or whipping
-            up some delightful scented candles. I thrive on challenges that keep
-            my mind buzzing, which is why I&apos;ve jumped headfirst into the
-            exciting world of web development. Let&apos;s team up and whip up
-            some digital magic together!
+            Philippines, who found my true calling in web development. My journey
+            from psychology and education to coding has taught me the value of
+            diverse perspectives and continuous learning. When I&apos;m not diving
+            into code, you&apos;ll catch me binge-watching movies, swooning over
+            Korean dramas, or crafting delightful scented candles. I thrive on
+            challenges that keep my mind buzzing, which is why I&apos;ve jumped
+            headfirst into the exciting world of web development. I believe in
+            creating digital experiences that are not just functional, but also
+            meaningful and user-friendly. Let&apos;s team up and whip up some
+            digital magic together!
           </p>
         </motion.div>
         <motion.div
@@ -85,11 +89,21 @@ const About = () => {
         >
           <h2>My Education</h2>
           <p>
-            I&apos;m a graduate of BS Psychology, a Licensed Professional
-            Teacher, and with 27 units earned in my Master of Arts in Teaching
-            Social Sciences. I have gained training and experience in HTML, CSS,
-            JavaScript, ReactJS, and Ruby on Rails through Avion School from
-            July (2023) to February (2024).
+            I hold a Bachelor of Science in Psychology and am a Licensed
+            Professional Teacher with 27 units completed in my Master of Arts in
+            Teaching Social Sciences. My educational background has equipped me
+            with strong analytical thinking, problem-solving skills, and an
+            understanding of human behavior that I apply to create intuitive user
+            experiences.
+          </p>
+          <p>
+            I completed an intensive full-stack web development bootcamp at Avion
+            School from July 2023 to February 2024, where I gained comprehensive
+            training and hands-on experience in HTML, CSS, JavaScript, ReactJS,
+            and Ruby on Rails. This program provided me with a solid foundation in
+            both frontend and backend development, along with best practices in
+            version control, collaborative development, and modern web
+            technologies.
           </p>
         </motion.div>
 
@@ -102,16 +116,22 @@ const About = () => {
         >
           <h2>Work Experience</h2>
           <p>
-            With a diverse background in customer service, recruitment,
+            With a diverse background spanning customer service, recruitment,
             marketing, education, and web development, I bring a unique
-            combination of technical and administrative skills to every role I
-            take on.
+            combination of technical expertise and soft skills to every project.
+            My experience in customer-facing roles has honed my ability to
+            understand user needs and translate them into functional, user-friendly
+            applications.
           </p>
           <p>
-            Additionally, I have hands-on experience in front-end development
-            using ReactJS, TypeScript, JavaScript, Tailwind CSS, SASS, ShadCN,
-            daisyUI, and Bootstrap, as well as backend experience with Ruby on
-            Rails and SQL/PostgreSQL.
+            In web development, I have hands-on experience building responsive and
+            dynamic applications using modern frontend technologies including
+            ReactJS, TypeScript, JavaScript, Tailwind CSS, SASS, ShadCN, daisyUI,
+            and Bootstrap. On the backend, I&apos;ve worked with Ruby on Rails
+            and have experience with SQL/PostgreSQL for database management. I&apos;ve
+            successfully deployed applications using platforms like Vercel,
+            Netlify, and Render, and I&apos;m comfortable working with RESTful APIs,
+            version control with Git/GitHub, and modern development workflows.
           </p>
         </motion.div>
 
