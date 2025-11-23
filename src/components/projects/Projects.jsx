@@ -24,7 +24,7 @@ const items = [
     title: "WeatherPulse",
     description:
       "A sleek and responsive weather application built with React and styled using Tailwind CSS. It fetches real-time weather data from OpenWeather API. It offers a clean and intuitive user interface for checking the weather quickly and efficiently.",
-    img: "https://i.ibb.co/P6C9N4s/Weather-Pulse.png",
+    img: "https://i.ibb.co/nxqwNDf/Weather-Pulse.png",
     link: "https://seenj-weatherpulse.netlify.app",
   },
   {
@@ -63,7 +63,7 @@ const items = [
     id: 8,
     title: "Disconnecto",
     description:
-      "Disconnecto helps you track internet disconnections, monitor connection reliability, and generate reports to show your ISP—because 'No Internet' deserves receipts. Built with React, TypeScript, and Supabase for authentication and database, and modern web technologies, this app provides users with tools to log internet outages, track connection issues, and create detailed reports that can be used when filing complaints with internet service providers.",
+      "Disconnecto helps you track internet disconnections, monitor connection reliability, and generate reports to show your ISP. Because 'No Internet' deserves receipts. Built with React, TypeScript, and Supabase for authentication and database, and modern web technologies, this app provides users with tools to log internet outages, track connection issues, and create detailed reports that can be used when filing complaints with internet service providers.",
     img: "https://i.ibb.co/JR7dZgPR/Disconnecto.png",
     link: "https://disconnecto.vercel.app/",
   },
@@ -71,7 +71,7 @@ const items = [
     id: 9,
     title: "Focus Fairy",
     description:
-      "FocusFairy is a task tracker that helps you focus on what matters most. It&apos;s a simple and easy to use app that helps you stay on task and achieve your goals. Built with React, TypeScript, and Tailwind CSS, and Supabase for authentication and database, this magical productivity app provides an intuitive interface for managing tasks and maintaining focus throughout your day.",
+      "FocusFairy is a task tracker that helps you focus on what matters most. It's a simple and easy to use app that helps you stay on task and achieve your goals. Built with React, TypeScript, and Tailwind CSS, and Supabase for authentication and database, this magical productivity app provides an intuitive interface for managing tasks and maintaining focus throughout your day.",
     img: "https://i.ibb.co/4RXkTz2c/Focus-Fairy.png",
     link: "https://focusfairy.vercel.app/purplefairy13/tasks",
   },
