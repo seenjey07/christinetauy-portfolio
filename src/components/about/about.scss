@@ -250,17 +250,8 @@
 
           @include laptop {
             flex-direction: row;
-
-            .aboutMe, .education, .workExp {
-              display: flex;
-              flex-direction: column;
-              justify-content: flex-start;
-              flex: 1;
-              min-height: 240px;
-              max-height: fit-content;
-              align-items: flex-start;
-              text-align: justify;
-            }
+            align-items: stretch;
+            justify-content: space-around;
           }
         }
 
@@ -277,16 +268,21 @@
           @include mobile {
             padding: 8px;
             border: 0.5px solid gray;
+            height: fit-content;
           }
 
           @include tablet {
             border: 0.5px solid gray;
             padding: 12px;
+            height: 100%;
+            flex: 1;
           }
 
           @include laptop {
             border: 0.5px solid gray;
             padding: 12px;
+            height: 100%;
+            flex: 1;
           }
         }
 
@@ -297,11 +293,14 @@
 
             @include tablet {
               font-size: 0.85rem;
+              display: flex;
+              flex-direction: column;
             }
 
             @include laptop {
               font-size: 0.85rem;
-              min-height: fit-content;
+              display: flex;
+              flex-direction: column;
             }
           }
 
@@ -314,11 +313,14 @@
 
             @include tablet {
               font-size: 0.85rem;
-              
+              display: flex;
+              flex-direction: column;
             }
 
             @include laptop {
               font-size: 0.85rem;
+              display: flex;
+              flex-direction: column;
             }
           }
 
