@@ -214,6 +214,10 @@ const About = () => {
               alt="bootstrapBadge"
             />
             <img
+              src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"
+              alt="figmaBadge"
+            />
+            <img
               src="https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue"
               alt="framerBadge"
             />
@@ -230,6 +234,10 @@ const About = () => {
               alt="sqliteBadge"
             />
             <img
+              src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"
+              alt="supabaseBadge"
+            />
+            <img
               src="https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"
               alt="awsBadge"
             />
@@ -244,6 +252,10 @@ const About = () => {
             <img
               src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"
               alt="vercelBadge"
+            />
+            <img
+              src="https://img.shields.io/badge/Cursor-FF6B6B?style=for-the-badge&logo=cursor&logoColor=white"
+              alt="cursorBadge"
             />
             <img
               src="https://badges.aleen42.com/src/github.svg"
