@@ -29,14 +29,6 @@ const items = [
   },
   {
     id: 4,
-    title: "ChoreChatter",
-    description:
-      "ChoreChatter is a simple and interactive chat and to-do application designed to help users manage their daily tasks in a fun and engaging way by combining a mock chatbot feature with a to-do list.",
-    img: "https://i.ibb.co/TgbVHJ0/Chore-Chatter.png",
-    link: "https://seenj-chorechatter.netlify.app/",
-  },
-  {
-    id: 5,
     title: "Professional Review Buddy Website",
     description:
       "Using Figma, I created a design for a website for a professional review company. This website is currently under construction.",
@@ -44,7 +36,7 @@ const items = [
     link: "https://bit.ly/PRBHomeFigmaProto",
   },
   {
-    id: 6,
+    id: 5,
     title: "Professional Review Buddy - PRB LET Website",
     description:
       "Using Figma, I created a design for Professional Review Buddy's related website - PRB LET, specifically for Filipino LET takers. This website is currently under construction.",
@@ -52,7 +44,7 @@ const items = [
     link: "https://bit.ly/PRBLET-Page",
   },
   {
-    id: 7,
+    id: 6,
     title: "MindfulMe",
     description:
       "Currently under development, MindfulMe is a wellness app that seeks to support users in nurturing their mental health and embracing mindfulness daily. It allows users to record daily moods and journal entries, fostering self-awareness and emotional reflection. Built with React, Vite, JSX, Tailwind CSS, and Ruby on Rails, the app aims to deliver a modern, intuitive user experience.",
@@ -60,14 +52,32 @@ const items = [
     link: "",
   },
   {
-    id: 8,
+    id: 7,
     title: "Mind & Metrics Consultancy",
     description:
       "A modern single-page business website built with React, TypeScript, Tailwind CSS, and Shadcn/ui. It features a clean, responsive design with four key sections: Home, About, Services, and Contact — providing seamless navigation and quick access to the business&apos;s Facebook and Messenger channels. Deployed on Vercel for fast and reliable performance.",
     img: "https://i.ibb.co/zVSB1SRW/Mind-Metrics.png",
     link: "https://mind-metrics-alpha.vercel.app/",
   },
+  {
+    id: 8,
+    title: "Disconnecto",
+    description:
+      "Disconnecto helps you track internet disconnections, monitor connection reliability, and generate reports to show your ISP—because 'No Internet' deserves receipts. Built with React, TypeScript, and Supabase for authentication and database, and modern web technologies, this app provides users with tools to log internet outages, track connection issues, and create detailed reports that can be used when filing complaints with internet service providers.",
+    img: "https://i.ibb.co/JR7dZgPR/Disconnecto.png",
+    link: "https://disconnecto.vercel.app/",
+  },
+  {
+    id: 9,
+    title: "Focus Fairy",
+    description:
+      "FocusFairy is a task tracker that helps you focus on what matters most. It&apos;s a simple and easy to use app that helps you stay on task and achieve your goals. Built with React, TypeScript, and Tailwind CSS, and Supabase for authentication and database, this magical productivity app provides an intuitive interface for managing tasks and maintaining focus throughout your day.",
+    img: "https://i.ibb.co/4RXkTz2c/Focus-Fairy.png",
+    link: "https://focusfairy.vercel.app/purplefairy13/tasks",
+  },
 ];
+
+
 
 const EachProject = ({ item }) => {
   const ref = useRef();
